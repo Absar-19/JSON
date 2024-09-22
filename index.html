@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABCD123 - JSON Input Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JSON Input Form</h1>
+        <form id="jsonForm">
+            <textarea id="inputData" rows="4" placeholder='Enter JSON data here...'></textarea>
+            <div>
+                <label for="responseOptions">Select Response Type:</label>
+                <select id="responseOptions" disabled>
+                    <option value="">--Select--</option>
+                    <option value="alphabets">Alphabets</option>
+                    <option value="numbers">Numbers</option>
+                    <option value="highestLowercase">Highest Lowercase Alphabet</option>
+                </select>
+            </div>
+            <button type="submit" id="submitButton" disabled>Submit</button>
+        </form>
+        <div id="responseContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
